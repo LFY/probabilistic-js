@@ -10,6 +10,8 @@ function openModule(mod)
 	}
 }
 
+function deep_copy(obj) { return JSON.parse(JSON.stringify(obj)); }
+
 function arrayEquals(a1, a2)
 {
 	var n = a1.length
@@ -60,5 +62,6 @@ module.exports =
 	arrayEquals: arrayEquals,
 	randomChoice: randomChoice,
     discreteChoice: discreteChoice,
+    deep_copy : deep_copy,
 	keys: keys
 }

@@ -31,7 +31,7 @@ WorldGraph.prototype.update_transitions = function update_transitions(addr_vals)
 WorldGraph.prototype.incorp_trace = function incorp_trace(input_trace) {
 
 	var addr_vals = get_seq_addr_vals(input_trace);
-	this.transitions = this.update_transitions(addr_vals);
+	this.update_transitions(addr_vals);
 }
 
 WorldGraph.prototype.deepcopy = function deepcopy() {

@@ -1,4 +1,5 @@
 var trace = require("./trace")
+var worldgraph = require("./worldgraph")
 var erp = require("./erp")
 var control = require("./control")
 var inference = require("./inference")
@@ -11,6 +12,10 @@ module.exports = {}
 // Forward trace exports
 for (var prop in trace)
 	module.exports[prop] = trace[prop]
+
+// Forward trace exports
+for (var prop in worldgraph)
+	module.exports[prop] = worldgraph[prop]
 
 // Forward erp exports
 for (var prop in erp)
